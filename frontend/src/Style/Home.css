@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.admin,.student{
+    background-color: rgb(81, 81, 158);
+    padding: 100px;
+    border-radius: 10px;
+
+}
+.admin:hover{
+    transition: 0.5s;
+    box-shadow: 0 4px 4px 0#565253, 0 4px 15px 0 #565253;
+}
+.student:hover{
+    transition: 0.5s;
+    box-shadow: 0 4px 4px 0#565253, 0 4px 15px 0 #565253;
+}

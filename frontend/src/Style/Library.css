@@ -1,0 +1,8 @@
+.library{
+    text-align: center;
+    font-size: 1.3em;
+    color: rgba(243, 139, 3, 0.686);
+    position: sticky;
+    margin-left: 270px;
+    z-index: 1;
+}

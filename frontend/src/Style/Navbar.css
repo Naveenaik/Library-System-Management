@@ -1,0 +1,108 @@
+.navbar {
+  height: 10px;
+}
+
+.sidebar{
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: #000000;
+  transition: all .5s ease;
+  z-index: 999;
+}
+.sidebar header{
+  font-size: 28px;
+  color: #353535;
+  line-height: 100px;
+  text-align: center;
+  background-color: #b8afaf;
+  user-select: none;
+  font-family: 'Lato', sans-serif;
+}
+.sidebar a{
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: #ffffff;
+  line-height: 65px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-left: 5px solid transparent;
+  font-family: 'Lato', sans-serif;
+  /* transition: all .5s ease; */
+  text-decoration: none;
+}
+a.active,a:hover{
+  border-left: 5px solid var(--accent-color);
+  color: #fff;
+   background: linear-gradient(to left, var(--accent-color), var(--gradient-color));
+}
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.active-link {
+  background-color: #00eeffcf; 
+}
+
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+  color: #030303;
+  border-radius: 5px;
+  margin: 15px 0;
+  font-size: 29px;
+  background-color: #ffffff;
+  
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  line-height: 45px;
+  transition: all .5s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 255px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 265px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+#check:checked ~  .sec{
+  margin-left: 255px;
+}
+
+
+.sidebar > a.active,.sidebar > a:hover{
+  background-color: #555050ad;
+}
+
+/* .sidebar > a.active,.sidebar > a:hover:nth-child(even) {
+  --accent-color: #75a5b0;
+  --gradient-color: #4e4e4e;
+}
+.sidebar a.active,.sidebar > a:hover:nth-child(odd) {
+  --accent-color: #f3f3f3;
+  --gradient-color: #656566;
+} */
